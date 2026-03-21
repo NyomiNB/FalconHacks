@@ -13,7 +13,13 @@ html {
 h1{
 font-family: merriweather;
 }
- 
+  .profilePhoto {
+  vertical-align: middle;
+  width: 100;
+  height: 100;
+  border-radius: 10%;
+}
+
 @font-face {
   font-family: merriweather;
   src: url(../fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf)
