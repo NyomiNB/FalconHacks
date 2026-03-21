@@ -1,0 +1,23 @@
+html {
+  height: 100%;
+  width: 100%;
+  font: fontREG
+}
+
+.center {
+      display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+h1{
+font-family: merriweather;
+}
+@font-face {
+  font-family: merriweather;
+  src: url(../fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf)
+}
+  @font-face{
+  font-family: intel;
+  src: url(fonts/Inter-VariableFont_opsz,wght.ttf)
+}

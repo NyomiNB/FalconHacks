@@ -5,16 +5,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>BGSU</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/universal.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 </head>
   <body>
     <nav> <a href="index.html">MyBGSU</a> &nbsp; Welcome &nbsp; <a href="index.html">Welcome</a> &nbsp; <a href="https://login.bgsu.edu/">Sign In</a></nav>
-    <header><h1> Welcome to MyBGSU! </h1></header>
+    <header><h1 class ="center"> Welcome to MyBGSU! </h1></header>
     <main>
-      <h4> To login, <b> select </b> <i> Sign In </i> from the menu at the top right corner of the screen. </h4>
-    </main>
+
+     </main>
   </body> 
- <footer>
+ 
+  <form action="action_page.php" method="post">
+
+  <div class="center">
+    <b>Username</b>
+    </div>
+      <div class="center">
+
+  <!--- <p> <label for="uname"><b>Username</b></label></p>-->
+    <input type="text" placeholder="Enter Username" name="uname" required>
+ <p></p>
+
+  </div>
+    <div class="center">
+  <b>Password</b> 
+    </div>
+
+    <div class="center">
+ 
+     <input type="password" placeholder="Enter Password" name="psw" required></p>
+    </div>
+       <div class="center">
+
+    <button type="submit">Login</button>
+ 
+   </div>
+   <div class="center">
+
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    </div>
+  </div>
+
+  <div class="center" style="background-color:#f1f1f1">
+  <!--<button type="button" class="cancelbtn">Cancel</button>-->
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+ <footer> 
 This website is in accordance with <a href="mailto:access@bgsu.edu"> accessibility standards</a>.
 <!--TODO: Add contrast toggle button--> 
  &nbsp <a href="mailto:access@bgsu.edu"> National Suicide Hotline</a>. 
