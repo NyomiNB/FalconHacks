@@ -2,57 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>BGSU</title>
-  <link href="CSS/home.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyBGSU — Home</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-  <body>
-    
-    <nav> <a href="index.html">MyBGSU</a> &nbsp; Home &nbsp; <a href="https://outlook.office365.com/mail/">Email</a> &nbsp; <a href="https://bgsu.instructure.com/">Canvas</a> &nbsp; <a href="https://sso.bgsu.edu/sso/logout/?">Log Out</a></nav>
-     <main>
-       <div class="card-layout">
-<div style="border: 2px solid black; display: inline-block; padding: 5px;">
-  <h1> Student Center </h1>
-  <p> To Do List </p>
-  <p> Holds </p>
-  <p> Classes </p>
-  <p> Academics, Advisors, Grades </p>
-  <p> Navigate </p>
-  <p> Libraries Academic Support </p>
-  <p> Kuhlin Career Hub </p>
-  <p> My Account </p>
-  <a href="studentcenter.html">Student Center</a>
-</div>
-<div style="border: 2px solid black; display: inline-block; padding: 5px;">
-  <h1> Scholarship Opportunities </h1>
-  <p> Search and apply for multiple BGSU scholarships:</p>
-  <ul>
-    <li>Start by filling out your general and college-specific scholarship applications</li>
-    <li>Click on the Recommended Opportunitites tab to see if anything additional is required</li>
-  </ul>
-  <a href="https://bgsu.academicworks.com/opportunities/recommended">Begin your Scholarship application</a>
- </div>
-  <div style="border: 2px solid black; display: inline-block; padding: 5px;">
-   <h1>BG1 Bucks</h1> 
-   <p>Use your card for:
-    <ul><li>Meal plans</li>
-    <li>Events</li> 
-<li>Campus facilities (printing, vending machines, certain off campus facilities)</li>  
-<li>Money withdraws (PNC customers only)</li>
-    </ul> 
-   <p><a href=eacct-bgsu-sp.transactcampus.com/eaccounts/ProfilePersonalInformation.aspx> Check/Add to BG1 Buck Balance</a></p> 
+<body>
 
   <nav>
-    <a href="home.html">MyBGSU</a>
+    <a href="home.html" class="nav-brand">MyBGSU</a>
     <a href="home.html">Home</a>
     <a href="https://outlook.office365.com/mail/">Email</a>
     <a href="https://bgsu.instructure.com/">Canvas</a>
     <span class="nav-spacer"></span>
     <a href="https://sso.bgsu.edu/sso/logout/">Log Out</a>
   </nav>
+
+  <header>
+    <h1>Welcome to MyBGSU</h1>
+    <p>Your student portal for academics, finances, and campus resources.</p>
+  </header>
 
   <main>
     <div class="card-layout">
@@ -100,8 +68,6 @@
             <li>Money withdrawals (PNC customers only)</li>
           </ul>
           <a class="btn" href="https://eacct-bgsu-sp.transactcampus.com/eaccounts/ProfilePersonalInformation.aspx">Check / Add BG1 Buck Balance</a>
-          <br>
-          <a class="btn" href="https://eacct-bgsu-sp.transactcampus.com/eaccounts/ProfilePersonalInformation.aspx" style="margin-top:0.5rem;">Update Photo</a>
         </div>
       </div>
 
@@ -118,7 +84,6 @@
           </ul>
           <p>Until you select your room and meal plan, your application will say <em>incomplete</em>.</p>
           <a class="btn" href="https://bgsu.starrezhousing.com/StarRezPortalX/InitiateLogin/StarNet.Core.AuthProviders.Shibboleth">Housing &amp; Meal Plan Application</a>
-          <br>
           <ul class="link-list" style="margin-top:0.75rem;">
             <li><a href="https://www.bgsu.edu/housing/housing-resources.html">Maintenance Request</a></li>
             <li><a href="https://css.bgsu.edu/psc/ps/BG_SS/SA/c/BG_MENU_FLUID_SSS.BG_SS_CMNTY_ENR_FL.GBL?languageCd=ENG">Join a Learning Community</a></li>
@@ -131,8 +96,13 @@
   </main>
 
   <footer>
-    <span>This website is in accordance with <a href="mailto:access@bgsu.edu">accessibility standards</a>.</span>
-    <span><a href="tel:988">988 Suicide &amp; Crisis Lifeline</a></span>
+    <div class="footer-inner">
+      <span>Bowling Green State University</span>
+      <span>·</span>
+      <span><a href="mailto:access@bgsu.edu">Accessibility Standards</a></span>
+      <span>·</span>
+      <span><a href="tel:988">988 Suicide &amp; Crisis Lifeline</a></span>
+    </div>
   </footer>
 
 </body>
