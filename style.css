@@ -33,23 +33,20 @@ html, body {
 
 /* ── Navigation ──────────────────────────────── */
 nav {
-  text-align: center;
+   text-align: center;
   background-color: var(--brown);
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0;
   height: 56px;
-  border-bottom: 4px solid var(--orange);
-}
+ }
 .navB{
     text-align: center;
   background-color: var(--white);
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0;
   height: 56px;
   color: orange;
@@ -78,7 +75,7 @@ nav a:hover {
 }
 
 nav .nav-spacer {
-  display: none;
+  flex: 1;
 }
 
 /* ── Page Header ─────────────────────────────── */
@@ -308,9 +305,5 @@ footer a:hover {
   font-size: 1.2rem !important;
   letter-spacing: 0.04em;
   padding-left: 0 !important;
-  margin-right: auto;
-}
-
-nav a:last-child {
-  margin-left: auto;
+  margin-right: 0.5rem;
 }
