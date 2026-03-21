@@ -3,9 +3,9 @@
     height:100px;
     background:blue;
 }
-.card-layout {
+div {
   display:flex;
   flex-wrap: wrap;
-  gap: .9em;
+  gap: .5em;
   justify-content: center;
 }
