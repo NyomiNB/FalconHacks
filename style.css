@@ -33,6 +33,7 @@ html, body {
 
 /* ── Navigation ──────────────────────────────── */
 nav {
+  text-align: center;
   background-color: var(--brown);
   padding: 0 2rem;
   display: flex;
@@ -41,10 +42,18 @@ nav {
   height: 56px;
   border-bottom: 4px solid var(--orange);
 }
-
+.navB{
+    text-align: center;
+  background-color: var(--white);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 56px;
+  color: orange;
+ }
 nav a {
-  color: var(--white);
-  text-decoration: none;
+   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0 1rem;
@@ -54,13 +63,12 @@ nav a {
   transition: background-color 0.2s, color 0.2s;
 }
 
-nav a:first-child {
+/* nav a:first-child {
   font-size: 1.15rem;
-  color: var(--orange);
-  letter-spacing: 0.03em;
+   letter-spacing: 0.03em;
   padding-left: 0;
   margin-right: 0.5rem;
-}
+} */
 
 nav a:hover {
   background-color: var(--orange);
@@ -296,7 +304,6 @@ footer a:hover {
 /* ── Nav brand ───────────────────────────────── */
 .nav-brand {
   font-size: 1.2rem !important;
-  color: var(--orange) !important;
   letter-spacing: 0.04em;
   padding-left: 0 !important;
   margin-right: 0.5rem;
