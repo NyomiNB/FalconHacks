@@ -6,6 +6,6 @@
 .card-layout {
   display:flex;
   flex-wrap: wrap;
-  gap: .5em;
+  gap: .9em;
   justify-content: center;
 }
