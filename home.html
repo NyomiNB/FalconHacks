@@ -1,74 +1,103 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>BGSU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyBGSU — Home</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="home.css" rel="stylesheet" type="text/css" />
 </head>
-  <body>
-    <nav> <a href="index.html">MyBGSU</a> &nbsp; Home &nbsp; <a href="https://outlook.office365.com/mail/">Email</a> &nbsp; <a href="https://bgsu.instructure.com/">Canvas</a> &nbsp; <a href="https://sso.bgsu.edu/sso/logout/?">Log Out</a></nav>
-     <main>
-       <div class="card-layout">
-<div style="border: 2px solid black; display: inline-block; padding: 5px;">
-  <h1> Student Center </h1>
-  <p> To Do List </p>
-  <p> Holds </p>
-  <p> Classes </p>
-  <p> Academics, Advisors, Grades </p>
-  <p> Navigate </p>
-  <p> Libraries Academic Support </p>
-  <p> Kuhlin Career Hub </p>
-  <p> My Account </p>
-  <a href="studentcenter.html">Student Center</a>
-</div>
-<div style="border: 2px solid black; display: inline-block; padding: 5px;">
-  <h1> Scholarship Opportunities </h1>
-  <p> Search and apply for multiple BGSU scholarships:</p>
-  <ul>
-    <li>Start by filling out your general and college-specific scholarship applications</li>
-    <li>Click on the Recommended Opportunitites tab to see if anything additional is required</li>
-  </ul>
-  <a href="https://bgsu.academicworks.com/opportunities/recommended">Begin your Scholarship application</a>
- </div>
-  <div style="border: 2px solid black; display: inline-block; padding: 5px;">
-   <h1>BG1 Bucks</h1> 
-   <p>Use your card for:
-    <ul><li>Meal plans</li>
-    <li>Events</li> 
-<li>Campus facilities (printing, vending machines, certain off campus facilities)</li>  
-<li>Money withdraws (PNC customers only)</li>
-    </ul> 
-   <p><a href=eacct-bgsu-sp.transactcampus.com/eaccounts/ProfilePersonalInformation.aspx> Check/Add to BG1 Buck Balance</a></p> 
+<body>
 
-   <a href=eacct-bgsu-sp.transactcampus.com/eaccounts/ProfilePersonalInformation.aspx> Update Photo</a> 
-</div>
- <div style="border: 2px solid black; display: inline-block; padding: 5px;">
-  <h1>Housing and Residence Life</h1> 
-<p>Below you will find the Housing and Meal Plan Application.</p>
-<p>You may need to re-visit the application throughout the process to complete steps like:
-<ul><li>Creating a Room Selection Group</li>  
-<li>Signing up for the Hall Waitlist</li>
-<li>Contacting your roommate</li>
-<li>Selecting your room</li> 
-</ul>
-<p>Until you select your room and meal plan, your application will say incomplete. </p>
-<p>You can learn more in your Housing Selection Guide</p>
-<a href="https://bgsu.starrezhousing.com/StarRezPortalX/InitiateLogin/StarNet.Core.AuthProviders.Shibboleth"><p>Housing and meal Application</p></a>
-<a href="https://www.bgsu.edu/housing/housing-resources.html"><p>Maintence Request</p></a>
-<a href="https://css.bgsu.edu/psc/ps/BG_SS/SA/c/BG_MENU_FLUID_SSS.BG_SS_CMNTY_ENR_FL.GBL?languageCd=ENG"><p>Join a Learning Community!<p></a>
-<a href="https://css.bgsu.edu/psc/ps/BG_SS/SA/c/BG_MENU_FLUID_SSS.BG_RESH_HISTORY_FL.GBL?languageCd=ENG&ptformfactor=3"><p>Previous On-Campus Adddresses</p></a>
+  <nav>
+    <a href="home.html">MyBGSU</a>
+    <a href="home.html">Home</a>
+    <a href="https://outlook.office365.com/mail/">Email</a>
+    <a href="https://bgsu.instructure.com/">Canvas</a>
+    <span class="nav-spacer"></span>
+    <a href="https://sso.bgsu.edu/sso/logout/">Log Out</a>
+  </nav>
 
- </div>
- 
+  <main>
+    <div class="card-layout">
+
+      <!-- Student Center -->
+      <div class="card">
+        <div class="card-header">Student Center</div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="studentcenter.html">To Do List</a></li>
+            <li><a href="studentcenter.html">Holds</a></li>
+            <li><a href="studentcenter.html">Classes</a></li>
+            <li><a href="studentcenter.html">Academics, Advisors &amp; Grades</a></li>
+            <li><a href="https://bgsu.campus.eab.com/home">Navigate</a></li>
+            <li><a href="https://www.bgsu.edu/library.html">Libraries &amp; Academic Support</a></li>
+            <li><a href="https://www.bgsu.edu/career-center.html">Kuhlin Career Hub</a></li>
+            <li><a href="studentcenter.html">My Account</a></li>
+          </ul>
+          <a class="btn" href="studentcenter.html">Go to Student Center</a>
+        </div>
+      </div>
+
+      <!-- Scholarship Opportunities -->
+      <div class="card">
+        <div class="card-header">Scholarship Opportunities</div>
+        <div class="card-body">
+          <p>Search and apply for multiple BGSU scholarships:</p>
+          <ul>
+            <li>Start by filling out your general and college-specific scholarship applications</li>
+            <li>Click on the <strong>Recommended Opportunities</strong> tab to see if anything additional is required</li>
+          </ul>
+          <a class="btn" href="https://bgsu.academicworks.com/opportunities/recommended">Begin Scholarship Application</a>
+        </div>
+      </div>
+
+      <!-- BG1 Bucks -->
+      <div class="card">
+        <div class="card-header">BG1 Bucks</div>
+        <div class="card-body">
+          <p>Use your BG1 card for:</p>
+          <ul>
+            <li>Meal plans</li>
+            <li>Events</li>
+            <li>Campus facilities (printing, vending, select off-campus)</li>
+            <li>Money withdrawals (PNC customers only)</li>
+          </ul>
+          <a class="btn" href="https://eacct-bgsu-sp.transactcampus.com/eaccounts/ProfilePersonalInformation.aspx">Check / Add BG1 Buck Balance</a>
+          <br>
+          <a class="btn" href="https://eacct-bgsu-sp.transactcampus.com/eaccounts/ProfilePersonalInformation.aspx" style="margin-top:0.5rem;">Update Photo</a>
+        </div>
+      </div>
+
+      <!-- Housing and Residence Life -->
+      <div class="card">
+        <div class="card-header">Housing &amp; Residence Life</div>
+        <div class="card-body">
+          <p>Below you will find the Housing and Meal Plan Application. You may need to revisit the application to:</p>
+          <ul>
+            <li>Create a Room Selection Group</li>
+            <li>Sign up for the Hall Waitlist</li>
+            <li>Contact your roommate</li>
+            <li>Select your room</li>
+          </ul>
+          <p>Until you select your room and meal plan, your application will say <em>incomplete</em>.</p>
+          <a class="btn" href="https://bgsu.starrezhousing.com/StarRezPortalX/InitiateLogin/StarNet.Core.AuthProviders.Shibboleth">Housing &amp; Meal Plan Application</a>
+          <br>
+          <ul class="link-list" style="margin-top:0.75rem;">
+            <li><a href="https://www.bgsu.edu/housing/housing-resources.html">Maintenance Request</a></li>
+            <li><a href="https://css.bgsu.edu/psc/ps/BG_SS/SA/c/BG_MENU_FLUID_SSS.BG_SS_CMNTY_ENR_FL.GBL?languageCd=ENG">Join a Learning Community</a></li>
+            <li><a href="https://css.bgsu.edu/psc/ps/BG_SS/SA/c/BG_MENU_FLUID_SSS.BG_RESH_HISTORY_FL.GBL?languageCd=ENG&ptformfactor=3">Previous On-Campus Addresses</a></li>
+          </ul>
+        </div>
+      </div>
+
     </div>
- </main>
-  </body> 
- <footer>
-This website is in accordance with <a href="mailto:access@bgsu.edu"> accessibility standards</a>.
-<!--TODO: Add contrast toggle button--> 
- &nbsp <a href="mailto:access@bgsu.edu"> National Suicide Hotline</a>. 
-<!--TODO: add javascript feature to check if user signed in = showLinks == true--> 
-</footer> 
+  </main>
+
+  <footer>
+    <span>This website is in accordance with <a href="mailto:access@bgsu.edu">accessibility standards</a>.</span>
+    <span><a href="tel:988">988 Suicide &amp; Crisis Lifeline</a></span>
+  </footer>
+
+</body>
 </html>
