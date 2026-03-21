@@ -1,11 +1,6 @@
-#rectangle{
-    width:200px;
-    height:100px;
-    background:blue;
-}
-div {
-  display:flex;
-  flex-wrap: wrap;
-  gap: .5em;
-  justify-content: center;
+/* ── Home page card grid ─────────────────────── */
+.card-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
 }

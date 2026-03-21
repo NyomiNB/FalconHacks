@@ -1,13 +1,83 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>BGSU</title>
   <link href="assets/universal.css" rel="stylesheet" type="text/css" />
 </head>
-  <body>
-    
-  </body> 
+<body>
+
+  <nav>
+    <a href="home.html">MyBGSU</a>
+    <a href="home.html">Home</a>
+    <a href="https://bgsu.campus.eab.com/home#?tab-state=class_information">Navigate</a>
+    <a href="https://bgsu.instructure.com/">Canvas</a>
+    <span class="nav-spacer"></span>
+    <a href="https://sso.bgsu.edu/sso/logout/">Log Out</a>
+  </nav>
+
+  <header>
+    <h1>Student Center</h1>
+    <p>Manage your academics, holds, classes, and account</p>
+  </header>
+
+  <main>
+    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:1.5rem;">
+
+      <div class="card">
+        <div class="card-header">Academics</div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="#">My Academics</a></li>
+            <li><a href="#">Advisors</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="academics.html">Degree Audit</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Enrollment</div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">To Do List</a></li>
+            <li><a href="#">Holds</a></li>
+            <li><a href="#">Shopping Cart</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Finances</div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="#">Account Balance</a></li>
+            <li><a href="#">Financial Aid</a></li>
+            <li><a href="#">Make a Payment</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Personal Info</div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="#">Contact Details</a></li>
+            <li><a href="#">Emergency Contacts</a></li>
+            <li><a href="#">Privacy Settings</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <span>This website is in accordance with <a href="mailto:access@bgsu.edu">accessibility standards</a>.</span>
+    <span><a href="tel:988">988 Suicide &amp; Crisis Lifeline</a></span>
+  </footer>
+
+</body>
 </html>
