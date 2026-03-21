@@ -10,6 +10,14 @@ html {
   align-items: center;
 
 }
+.contact{
+   
+    text-align: center;
+   display: flex;
+  align-items: center;
+   
+}
+ 
 h1{
 font-family: merriweather;
 }
@@ -18,6 +26,9 @@ font-family: merriweather;
   width: 100;
   height: 100;
   border-radius: 10%;
+}
+.contact{
+  padding-top: 5px;
 }
 
 @font-face {
