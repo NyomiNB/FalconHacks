@@ -10,12 +10,8 @@ html {
   align-items: center;
 
 }
-.contact{
-   
-    text-align: center;
-   display: flex;
-  align-items: center;
-   
+div{
+    padding-top: 20;
 }
  
 h1{
