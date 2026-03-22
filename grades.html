@@ -3,23 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MyBGSU — Sign In</title>
+  <title>MyBGSU — Grades</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
- 
   <nav>
-    <a href="index.html" class="nav-brand">MyBGSU</a>
-    <nav>
-     <a href="https://outlook.office365.com/mail/">Email</a>
+    <a href="home.html" class="nav-brand">MyBGSU</a>
+    <a href="https://outlook.office365.com/mail/">Email</a>
     <a href="https://bgsu.instructure.com/">Canvas</a>
-                <a href="https://bgsu.campus.eab.com/home">Navigate</a> 
-                <a href="https://www.bgsu.edu/library.html">Libraries &amp; Academic Support</a> 
-           <a href="https://www.bgsu.edu/career-center.html">Kuhlin Career Hub</a>  <span class="nav-spacer"></span>
-    <a href="https://sso.bgsu.edu/sso/logout/">Log Out</a>
-  </nav>
+    <a href="https://bgsu.campus.eab.com/home">Navigate</a>
+    <a href="https://www.bgsu.edu/library.html">Libraries &amp; Academic Support</a>
+    <a href="https://www.bgsu.edu/career-center.html">Kuhlin Career Hub</a>
     <span class="nav-spacer"></span>
+    <a href="https://sso.bgsu.edu/sso/logout/">Log Out</a>
   </nav>
 
   <div class="hero" style="padding: 1.25rem 2rem;">
@@ -27,78 +24,168 @@
       <h3 style="font-size: 2rem; font-weight: 700;">Bowling Green State University</h3>
     </div>
   </div>
-  <!-- <div class="card-header">Student Dashboard</div> -->
 
   <nav class="navB">
-            <a href="todolist.html">To Do List</a> 
-          <a href="holds.html">Holds</a> 
-           <a href="classes.html">Classes</a> 
-             <a href="academics.html">Academics, Advisors &amp; Grades</a> 
-             <a href="account.html">My Account</a>  
-            </nav>
+    <a href="todolist.html">To Do List</a>
+    <a href="holds.html">Holds</a>
+    <a href="classes.html">Classes</a>
+    <a href="academics.html">Academics, Advisors &amp; Grades</a>
+    <a href="account.html">My Account</a>
+  </nav>
+
   <main>
-    <h1>Academics, Advisors & Grades</h1>
-    <nav> <a href="degreeprogress.html">Degree Progress</a> &nbsp; <a href="advisors.html">Advisors</a> &nbsp; <a href="grades.html">Grades</a> &nbsp; <a href="transcripts.html">Transcripts</a></nav>
-    <h1>Grades</h1>
-    <h3>View Grades</h3>
-    <h4>Spring Semester 2026</h4>
-    <p><b>Term GPA</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4.00</p>
-    <p><b>Cumulative GPA</b> &nbsp; &nbsp; 4.00</p>
+    <h1 class="page-heading">Academics, Advisors &amp; Grades</h1>
+
+    <div class="tab-nav">
+      <a href="degreeprogress.html">Degree Progress</a>
+      <a href="advisors.html">Advisors</a>
+      <a href="grades.html" class="active">Grades</a>
+      <a href="transcripts.html">Transcripts</a>
+    </div>
+
+    <!-- Current Term Grades -->
+    <div class="card" style="margin-bottom: 1.25rem;">
+      <div class="card-header">View Grades — Spring Semester 2026</div>
+      <div class="card-body">
+        <div class="gpa-bar">
+          <div class="gpa-item">
+            <label>Term GPA</label>
+            <span>4.00</span>
+          </div>
+          <div class="gpa-item">
+            <label>Cumulative GPA</label>
+            <span>4.00</span>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Units</th>
+              <th>Grading</th>
+              <th>Grade</th>
+              <th>Grade Points</th>
+              <th>Mid Term 1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CS 2020</td>
+              <td>3.00</td>
+              <td>Graded</td>
+              <td>—</td>
+              <td>—</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>CS 2190</td>
+              <td>3.00</td>
+              <td>Graded</td>
+              <td>—</td>
+              <td>—</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>CS 3000</td>
+              <td>3.00</td>
+              <td>Graded</td>
+              <td>—</td>
+              <td>—</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>ETHN 1010</td>
+              <td>3.00</td>
+              <td>Graded</td>
+              <td>—</td>
+              <td>—</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>MATH 2470</td>
+              <td>3.00</td>
+              <td>Graded</td>
+              <td>—</td>
+              <td>—</td>
+              <td>A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Academic Standing -->
+    <div class="card" style="margin-bottom: 1.25rem;">
+      <div class="card-header">Academic Standing</div>
+      <div class="card-body">
+        <span class="badge-success">Dean's List</span>
+        <p style="margin-top: 0.5rem;"><strong>Fall Semester 2025</strong></p>
+        <p style="margin-top: 0.4rem;">CONGRATULATIONS! You made the Dean's List!</p>
+      </div>
+    </div>
+
+    <!-- Course History -->
+    <div class="card">
+      <div class="card-header">Course History</div>
+      <div class="card-body">
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Term</th>
+              <th>Grade</th>
+              <th>Units</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CS 2900</td>
+              <td>Career Prep in Computing Field</td>
+              <td>Fall Semester 2025</td>
+              <td>S</td>
+              <td>2.00</td>
+              <td>Taken</td>
+            </tr>
+            <tr>
+              <td>CS 2010</td>
+              <td>Programming Fundamentals</td>
+              <td>Fall Semester 2025</td>
+              <td>A</td>
+              <td>3.00</td>
+              <td>Taken</td>
+            </tr>
+            <tr>
+              <td>MATH 2220</td>
+              <td>Discrete Mathematics</td>
+              <td>Fall Semester 2025</td>
+              <td>A</td>
+              <td>3.00</td>
+              <td>Taken</td>
+            </tr>
+            <tr>
+              <td>SPAN 2020</td>
+              <td>Intermed Spanish II</td>
+              <td>Fall Semester 2025</td>
+              <td>A</td>
+              <td>3.00</td>
+              <td>Taken</td>
+            </tr>
+            <tr>
+              <td>HNRS 2010</td>
+              <td>Intro Critical Thinking</td>
+              <td>Fall Semester 2025</td>
+              <td>A</td>
+              <td>3.00</td>
+              <td>Taken</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </main>
-  <table>
-    <tr> 
-        <th>Class</th>
-        <th>Units</th>
-        <th>Grading</th>
-        <th>Grade</th>
-        <th>Grade Points</th>
-        <th>Mid Term 1</th>
-    </tr>
-    <tr>
-        <td>CS 2020</td>
-        <td>3.00</td>
-        <td>Graded</td>
-        <td></td>
-        <td></td>
-        <td>A</td>
-    </tr>
-    <tr>
-        <td>CS 2190</td>
-        <td>3.00</td>
-        <td>Graded</td>
-        <td></td>
-        <td></td>
-        <td>A</td>
-    </tr>
-    <tr>
-        <td>CS 3000</td>
-        <td>3.00</td>
-        <td>Graded</td>
-        <td></td>
-        <td></td>
-        <td>A</td>
-    </tr>
-    <tr>
-        <td>ETHN 1010</td>
-        <td>3.00</td>
-        <td>Graded</td>
-        <td></td>
-        <td></td>
-        <td>A</td>
-    </tr>
-    <tr>
-        <td>MATH 2470</td>
-        <td>3.00</td>
-        <td>Graded</td>
-        <td></td>
-        <td></td>
-        <td>A</td>
-    </tr>
-  </table>
-  <br>
-  <h3>Academic Standing</h3>
-  <p><b>Fall Semester 2025 <br> Dean's List</b></p>
-  <p>CONGRATULATIONS! You made the Dean's List!</p>
+
   <footer>
     <div class="footer-inner">
       <span>Bowling Green State University</span>
