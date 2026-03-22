@@ -3,14 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MyBGSU — Sign In</title>
+  <title>MyBGSU — Degree Progress</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
   <nav>
-    <a href="index.html" class="nav-brand">MyBGSU</a>
+    <a href="home.html" class="nav-brand">MyBGSU</a>
+    <a href="https://outlook.office365.com/mail/">Email</a>
+    <a href="https://bgsu.instructure.com/">Canvas</a>
+    <a href="https://bgsu.campus.eab.com/home">Navigate</a>
+    <a href="https://www.bgsu.edu/library.html">Libraries &amp; Academic Support</a>
+    <a href="https://www.bgsu.edu/career-center.html">Kuhlin Career Hub</a>
     <span class="nav-spacer"></span>
+    <a href="index.html">Log Out</a>
   </nav>
 
   <div class="hero" style="padding: 1.25rem 2rem;">
@@ -18,42 +24,65 @@
       <h3 style="font-size: 2rem; font-weight: 700;">Bowling Green State University</h3>
     </div>
   </div>
-  <!-- <div class="card-header">Student Dashboard</div> -->
 
   <nav class="navB">
-            <a href="todolist.html">To Do List</a> 
-          <a href="holds.html">Holds</a> 
-           <a href="classes.html">Classes</a> 
-             <a href="academics.html">Academics, Advisors &amp; Grades</a> 
-             <a href="account.html">My Account</a>  
-            </nav>
+    <a href="home.html">Home</a>
+    <a href="todolist.html">To Do List</a>
+    <a href="holds.html">Holds</a>
+    <a href="classes.html">Classes</a>
+    <a href="academics.html">Academics, Advisors &amp; Grades</a>
+    <a href="account.html">My Account</a>
+  </nav>
+
   <main>
-    <h1>Academics, Advisors & Grades</h1>
-    <nav> <a href="degreeprogress.html">Degree Progress</a> &nbsp; <a href="advisors.html">Advisors</a> &nbsp; <a href="grades.html">Grades</a> &nbsp; <a href="transcripts.html">Transcripts</a></nav>
-    <h1>Degree Progress</h1>
-    <h2>View Transfer Credit Report</h2>
-    <p>No transfer credits found.</p>
-    <br>
-    <h2>Degree Audit</h2>
-    <p>Click here to access your degree audit:</p>
-    <a href="https://bgsu.uachieve.com/selfservice/general/selectinstitution.html?src=institutionrequired">Audit</a>
-    <br>
-    <br>
-    <h2>Apply for Graduation</h2>
-    <form></form>
-        <p>Do you have a plan after graduation to enroll in a graduate program or be employed full-time?</p>
-        <label>
-            <input type="radio" name="agreement" value="yes" required>
-            Yes
-        </label>
-        <label>
-            <input type="radio" name="agreement" value="no">
-            No
-        </label>
-        <br>
-        <button type="submit">Apply</button>
-    </form>
+    <h1 class="page-heading">Academics, Advisors &amp; Grades</h1>
+
+    <div class="tab-nav">
+      <a href="degreeprogress.html" class="active">Degree Progress</a>
+      <a href="advisors.html">Advisors</a>
+      <a href="grades.html">Grades</a>
+      <a href="transcripts.html">Transcripts</a>
+    </div>
+
+    <!-- Transfer Credit Report -->
+    <div class="card" style="margin-bottom: 1.25rem;">
+      <div class="card-header">Transfer Credit Report</div>
+      <div class="card-body">
+        <p>No transfer credits found.</p>
+      </div>
+    </div>
+
+    <!-- Degree Audit -->
+    <div class="card" style="margin-bottom: 1.25rem;">
+      <div class="card-header">Degree Audit</div>
+      <div class="card-body">
+        <p>Your degree audit shows your progress toward completing all graduation requirements.</p>
+        <a class="btn" href="https://bgsu.uachieve.com/selfservice/general/selectinstitution.html?src=institutionrequired">View Degree Audit</a>
+      </div>
+    </div>
+
+    <!-- Apply for Graduation -->
+    <div class="card">
+      <div class="card-header">Apply for Graduation</div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <p>Do you have a plan after graduation to enroll in a graduate program or be employed full-time?</p>
+            <label>
+              <input type="radio" name="agreement" value="yes" required>
+              Yes
+            </label>
+            <label>
+              <input type="radio" name="agreement" value="no">
+              No
+            </label>
+          </div>
+          <button type="submit" class="btn-submit">Apply for Graduation</button>
+        </form>
+      </div>
+    </div>
   </main>
+
   <footer>
     <div class="footer-inner">
       <span>Bowling Green State University</span>
